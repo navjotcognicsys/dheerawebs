@@ -1,0 +1,44 @@
+var mongoose = require("mongoose");    
+var rac_pre = new mongoose.Schema({  
+    firstName: String,
+    lastName: String,
+    email: {type:String,unique: true},
+    registration_time:Date,
+    approval_status:String,
+    phone:String,
+    state:String,
+    city:String,
+    gender:String,
+    age:String,
+    area_of_employment:String,
+    type_of_Institution_where_you_are_currently_working:String,
+    are_you_aware_of_the_recent_MTP_Amendment_and_the_Rules_that_have_changed:String,
+    are_you_aware_of_any_WHO_guidelines_on_safe_abortion:String,
+    have_you_participated_or_conducted_any_awareness_program_for_women_on_safe_abortion:String,
+    have_you_participated_or_conducted_recent_trainings_or_continued_medical_education_on_safe_abortion:String,
+    according_to_the_World_Health_Organization_WHO_legally_restricting_abortion_reduces_the_number_of_abortions_that_occur:String,
+    in_my_country_abortion_services_are_governed_by_the_law_namely_the_Medical_Termination_of_Pregnancy_MTP_Act:String,
+    in_my_country_the_law_was_amended_recently_expanding_access_to_abortion_services_on_therapeutic_eugenic_humanitarian_or_social_grounds:String,
+    in_my_country_only_registered_medical_practitioners_RMP_are_authorized_to_perform_abortions:String,
+    in_my_country_the_law_opinion_of_only_one_provider_is_required_for_MTP_up_to_20_weeks_of_gestation_and_requirement_of_opinion_of_two_providers_MTP_of_20_24_weeks_of_gestation:String,
+    in_my_country_in_cases_of_birth_defects_there_is_no_upper_gestation_limit_for_abortion_under_the_MTP_Act:String,
+    in_my_country_the_law_requires_a_married_woman_to_obtain_her_husbands_written_consent_before_she_can_undergo_a_termination_of_pregnancy:String,
+    in_my_country_the_law_requires_an_adolescent_to_obtain_written_consent_from_both_parents_guardians_before_she_can_undergo_a_termination_of_pregnancy:String,
+    in_my_country_the_law_requires_any_woman_seeking_an_abortion_resulting_from_rape_or_incest_to_provide_legal_evidence_of_the_sexual_assault_upto_24_weeks_of_gestation:String,
+    in_my_country_safe_abortion_is_available_for_any_woman_married_or_unmarried_including_failure_of_contraception:String,
+    where_the_law_permits_abortion_to_prevent_injury_to_the_woman_health_WHO_health_definition_in_the_constitution_can_be_used_a_state_of_complete_physical_mental_and_social_well_being_and_not_merely_the_absenceof_disease_or_infirmity:String,
+    most_of_the_women_are_likely_to_have_at_least_one_abortion_by_the_time_they_are_45_years_old:String,
+    abortion_is_one_of_the_safest_medical_procedures_when_performed_by_trained_health_care_providers_with_proper_equipment_correct_technique_and_sanitary_standards:String,
+    where_effective_contraceptive_methods_are_available_and_widely_used_the_total_abortion_rate_decreases:String,
+    if_all_contraceptive_users_become_aware_to_use_methods_perfectly_always_there_would_not_be_any_unintended_or_unwanted_pregnancies:String,
+    please_briefly_describe_your_greatest_issue_conflict_about_abortion_if_any_in_50_words_or_less_This_is_a_conflict_between_two_or_more_different_values_concerning_abortion:String,
+    i_will_be_attending_the_training_on:String,
+    I_hereby_give_explicit_consent_to_FOGSI_team_to_process_my_personal_data_and_or_information_for_the_purposes_of_improving_the_program_and_sharing_implementation_success:String
+
+
+
+    
+});  
+   
+const Rac_pre_Schema =mongoose.model('Rac_pre',rac_pre); 
+module.exports =  Rac_pre_Schema
